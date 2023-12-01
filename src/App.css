@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+.block {
+  margin: 0 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.perfumes-block {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.perfume-card {
+  width: 28%;
+  transition: 0.2s all ease;
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.perfume-card:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
+}
+
+.perfume-title {
+  padding: 25px;
+  line-height: 10px;
+}
+
+.perfume-img {
+  width: 250px;
+}
+
+
+.stock {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  font-size: 0.8rem;
+}
+
+.icon-stock {
+  width: 12px;
+  height: 11px;
+  background: url(https://marso.su//local/templates/aspro_mshop/images/svg/icons_wish.svg) -18px -2px no-repeat;
+}
+
+.perfume-elements{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.hover-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0px 0px 10px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-basket-btns {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.main-basket-btn {
+  padding: 4px 15px 3px 15px;
+  background: #00a396;
+  font-size: 0.7rem;
+  line-height: 20px;
+  border: 1px solid #00a396;
+  text-shadow: none;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  border-color: #00a396;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main-basket-btn:disabled {
+  background: #96ccc8;
+  border: 1px solid #96ccc8;
+}
+
+
+.count{
+  width: 30px;
+  background-color: #f7f7f7;
+}
+
+
+
+@media (max-width: 500px) {
+  .block {
+    margin: 0;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .perfumes-block {
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .perfume-img {
+    width: 130px;
+  }
+
+  .perfume-title {
+    line-height: 20px;
+    padding: 10px;
+  }
+
+  .perfume-card {
+    width: 45%;
+    border: 1px solid #e5e5e5;
+  }
+
+  .stock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.8rem;
+  }
+
+  .title-header {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .perfume-link {
+    display: block;
+    text-align: center;
+  }
+
+  .link {
+    width: 100%;
+  }
+
+}
+
+
+
+@media (min-width: 501px) and (max-width: 720px) {
+  .block {
+    margin: 0;
+    text-align: center;
+  }
+
+  .perfumes-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .perfume-card {
+    width: 40%;
+    border: 1px solid #e5e5e5;
+  }
+
+  .perfume-title {
+    line-height: 20px;
+  }
+
+  .perfume-img {
+    width: 180px;
+  }
+
+  .stock {
+    justify-content: center;
+  }
+
+  .hover-block {
+    display: flex;
+    gap: 0;
+  }
+}
+
+
+
+
+
+@media (min-width: 721px) and (max-width: 1024px) {
+  .block {
+    margin: 0 150px;
+  }
+
+  .perfumes-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .perfume-card {
+    width: 30%;
+    border: 1px solid #e5e5e5;
+  }
+
+
+  .perfume-title {
+    line-height: 15px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .perfume-img {
+    width: 120px;
+  }
+
+  .stock {
+    justify-content: center;
+  }
+
+  .hover-block {
+    display: flex;
+    gap: 5px;
+  }
+
+  .title-header {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1739px) {
+  .block {
+    margin: 0;
+    text-align: center;
+  }
+
+  .perfumes-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .perfume-title {
+    line-height: 15px;
+    padding: 0;
+  }
+
+  .perfume-img {
+    width: 195px;
+  }
+
+  .stock {
+    justify-content: center;
   }
 }

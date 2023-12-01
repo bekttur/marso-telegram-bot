@@ -1,0 +1,61 @@
+header {
+    margin-bottom: 130px;
+}
+
+
+.horizontal-menu {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+
+
+.menu-container {
+    display: inline-block;
+    background-color: white;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: #00000000;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+
+
+.active {
+    color: #009897;
+    transition: 0.2s all ease;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
+
+
+
+
+
+.menu {
+    display: flex;
+    gap: 3px;
+}
+
+.menu-item {
+    transition: 0.05s all ease;
+}
+
+.menu-item.active {
+    background-color: #5288c1;
+}

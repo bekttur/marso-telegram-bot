@@ -1,0 +1,510 @@
+.basket-block {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #e5e5e5;
+    margin: 0 auto;
+}
+
+.basket-nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    background-color: #f9f9f9;
+}
+
+.clear-btn {
+    width: 110px;
+    height: 35px;
+    background: none;
+    border: 1.5px solid #a6a6a6;
+    border-radius: 2px;
+    margin-right: 25px;
+}
+
+.clear-btn::before {
+    content: "";
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    background: url(https://marso.su/local/templates/aspro_mshop/images/close_icons.png) -2px -28px no-repeat;
+    vertical-align: middle;
+    margin: 0px 7px 0px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.basket-text {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid #01b1af;
+    background-color: #f9f9f9;
+}
+
+.basket-products {
+    width: 100%;
+
+}
+
+.basket-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.basket-img-block {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket-product-img {
+    width: 140px;
+}
+
+.basket-title {
+    width: 40%;
+    text-align: left;
+}
+
+.basket-info-block {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basket-price-block {
+    text-align: center;
+    line-height: 10px;
+}
+
+.basket-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.handle-btn {
+    width: 24px;
+    height: 28px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 0px;
+    border: 1px solid #e5e5e5;
+}
+
+.count {
+    width: 28px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+    font-size: 0.8rem;
+    background-color: #f7f7f7;
+}
+
+
+.total-basket {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.total-products {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.payment-btn {
+    padding: 8px 21px 9px 20px;
+    background: none;
+    font-size: 13px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    text-shadow: none;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    border-color: #00a396;
+    color: #00a396;
+    border-radius: 2px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.payment-btn:hover {
+    background-color: #00a396;
+    color: white;
+
+}
+
+.payment-btn:disabled {
+    background-color: #e4e4e4;
+    color: #00756b;
+    cursor: not-allowed;
+}
+
+
+.basket-null {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.basket-null-img {
+    width: 131px;
+    height: 116px;
+    margin: 50px auto 42px;
+    background: url(https://marso.su/local/components/marso/sale.basket.basket/templates/.default/images/empty_cart.svg) no-repeat center;
+    background-size: contain;
+}
+
+
+.product-out-block {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.product-out {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 9px;
+    background: url(https://marso.su/local/templates/aspro_mshop/images/close_icons.png) -2px -28px no-repeat;
+    vertical-align: middle;
+    margin: 0px 7px 0px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.totalPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+/* Modal */
+.modal-body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000005c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-block {
+    width: 400px;
+    height: fit-content;
+    background-color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 20px 10px;
+    top: 130px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-input {
+    width: 200px;
+    padding: 10px;
+}
+
+.modal-input:focus {
+    outline: none;
+    border: 2px solid #00adab;
+}
+
+.modal-btns {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.close-btn::before {
+    content: "";
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    background: url(https://marso.su/local/templates/aspro_mshop/images/close_icons.png) -2px -28px no-repeat;
+    vertical-align: middle;
+    margin: 0px 7px 0px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.success_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.success-card_block {
+    margin-top: 100px;
+    padding: 35px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 2px 7px 32px -24px;
+}
+
+.success-card_img {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.success-wrapper {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.animated-check {
+    height: 10em;
+    width: 10em
+}
+
+.animated-check path {
+    fill: none;
+    stroke: #7ac142;
+    stroke-width: 4;
+    stroke-dasharray: 23;
+    stroke-dashoffset: 23;
+    animation: draw 1s linear forwards;
+    stroke-linecap: round;
+    stroke-linejoin: round
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .basket-title {
+        width: fit-content;
+        text-align: left;
+    }
+
+    .basket-info-block {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+
+    .basket-product-img {
+        width: 100px;
+    }
+
+    .total-basket {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 180px;
+    }
+
+    .total-products {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+
+    .payment-btn {
+        padding: 4px 10px 5px 10px;
+        font-size: 13px;
+    }
+
+    
+
+    .modal-block {
+        width: 280px;
+        top: 260px;
+    }
+}
+
+
+
+@media (min-width: 501px) and (max-width: 720px) {
+    .basket-title {
+        width: fit-content;
+        text-align: left;
+    }
+
+    .basket-info-block {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .basket-product-img {
+        width: 100px;
+    }
+
+    .total-basket {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 180px;
+    }
+
+    .total-products {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+
+    .payment-btn {
+        padding: 4px 10px 5px 10px;
+        font-size: 13px;
+    }
+
+
+    .modal-block {
+        width: 330px;
+        top: 260px;
+    }
+}
+
+
+
+
+
+@media (min-width: 721px) and (max-width: 1024px) {
+    .basket-title {
+        width: fit-content;
+        text-align: left;
+    }
+
+    .basket-info-block {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .basket-product-img {
+        width: 100px;
+    }
+
+    .total-basket {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 180px;
+    }
+
+    .total-products {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+
+    .payment-btn {
+        padding: 4px 10px 5px 10px;
+        font-size: 13px;
+    }
+
+
+    .modal-block {
+        width: 350px;
+        top: 260px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1739px) {
+    .basket-product-img {
+        width: 100px;
+    }
+}
